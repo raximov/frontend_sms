@@ -1,0 +1,8 @@
+{
+  "name": "EduQuest Telegram Mini App",
+  "description": "A high-performance educational platform for students and teachers integrated with Telegram, featuring real-time testing and result tracking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

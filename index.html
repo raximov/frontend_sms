@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>EduQuest TMA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+      :root {
+        --tg-theme-bg-color: #ffffff;
+        --tg-theme-text-color: #000000;
+        --tg-theme-hint-color: #707579;
+        --tg-theme-link-color: #3390ec;
+        --tg-theme-button-color: #3390ec;
+        --tg-theme-button-text-color: #ffffff;
+        --tg-theme-secondary-bg-color: #f4f4f5;
+      }
+      body {
+        background-color: var(--tg-theme-bg-color);
+        color: var(--tg-theme-text-color);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .tg-secondary-bg { background-color: var(--tg-theme-secondary-bg-color); }
+      .tg-button { background-color: var(--tg-theme-button-color); color: var(--tg-theme-button-text-color); }
+      .tg-text { color: var(--tg-theme-text-color); }
+      .tg-hint { color: var(--tg-theme-hint-color); }
+      
+      /* Smooth transitions for TMA */
+      .page-transition {
+        animation: fadeIn 0.3s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "zustand": "https://esm.sh/zustand@^5.0.11",
+    "zustand/": "https://esm.sh/zustand@^5.0.11/",
+    "@tanstack/react-query": "https://esm.sh/@tanstack/react-query@^5.90.20",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
